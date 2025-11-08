@@ -181,7 +181,7 @@
     }
 
     try {
-      const response = await fetch('https://serenity-backend-78rn.onrender.com/api/auth/profile', {
+      const response = await fetch('http://127.0.0.1:8000/api/auth/profile', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -235,7 +235,7 @@
     formData.append('avatar', file);
 
     try {
-      const response = await fetch('https://serenity-backend-78rn.onrender.com/api/upload/avatar', {
+      const response = await fetch('http://127.0.0.1:8000/api/upload/avatar', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -272,7 +272,7 @@
     const about_me = aboutInput.value;
 
     try {
-      const response = await fetch('https://serenity-backend-78rn.onrender.com/api/auth/profile', {
+      const response = await fetch('http://127.0.0.1:8000/api/auth/profile', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

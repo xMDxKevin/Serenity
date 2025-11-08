@@ -28,7 +28,7 @@ $('#registerForm').on('submit', async function(e) {
   }
 
   try {
-    const response = await fetch('https://serenity-backend-78rn.onrender.com/api/auth/register', {
+    const response = await fetch('http://127.0.0.1:8000/api/auth/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -67,7 +67,7 @@ $('#loginForm').on('submit', async function(e) {
   };
 
   try {
-    const response = await fetch('https://serenity-backend-78rn.onrender.com/api/auth/login', {
+    const response = await fetch('http://127.0.0.1:8000/api/auth/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
