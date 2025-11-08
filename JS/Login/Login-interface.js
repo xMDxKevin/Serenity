@@ -28,7 +28,7 @@ $('#registerForm').on('submit', async function(e) {
   }
 
   try {
-    const response = await fetch('https://serenity-zz.vercel.app/api/auth/register', {
+    const response = await fetch('https://serenity-backend-eight.vercel.app/api/auth/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -67,7 +67,7 @@ $('#loginForm').on('submit', async function(e) {
   };
 
   try {
-    const response = await fetch('https://serenity-zz.vercel.app/api/auth/login', {
+    const response = await fetch('https://serenity-backend-eight.vercel.app/api/auth/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
